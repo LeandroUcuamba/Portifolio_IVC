@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" >
+    <title>Home</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header style="background-image: url(img/background-home.jpg);">
+        <!-- Container -->
+        <div class="container">
+           <nav>
+              <a href="index.html">
+                <img src="img/logo.png" alt="logotipo">
+              </a>
+              <ul class="ul">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="fotos.html">Fotos</a>
+                <a href="contacto.html" class="btn">Contacto</a>
+                <div class="close-icon" onclick="closeMenu()">
+                    <i class="fa fa-times-circles">
+                        <svg width="64px" height="64px" viewBox="-122.88 -122.88 1269.76 1269.76" xmlns="http://www.w3.org/2000/svg" fill="#b31919" stroke="#b31919" stroke-width="51.2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#165a24" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"></path></g></svg>
+                    </i>
+                </div>
+              </ul>
+              <div class="menu-icon" onclick="openMenu()">
+                 <i class="fa fa-bars" aria-hidden="true">
+                    <svg width="64px" height="64px" viewBox="-2.16 -2.16 22.32 22.32" xmlns="http://www.w3.org/2000/svg" fill="#157024" stroke="#157024" stroke-width="1.2959999999999998"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#1f2e1e" d="M17 5H1a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2zm0 5H1a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2zm0 5H1a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2z"></path> </g></svg>
+                 </i>
+              </div>
+           </nav>
+           <section class="banner">
+                <div class="banner-text">
+                    <h1>Igreja Visão Cristã - IVC</h1>
+                    <a href="contacto.html" class="btn">contacto e Localização</a>
+                </div>
+           </section>
+        </div>
+        <!-- End Container -->
+    </header>
+    <!-- End header -->
+
+    <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Nossos cultos principais</h3>
+                <p>
+                    "Descubra a intensidade da sua fé nos cultos principais. 
+                    Junte-se a nós e vamos cultuar juntos".
+                </p>
+                <a href="contacto.html" class="btn">Entre em contacto</a>
+                <a href="https://web.facebook.com/Amigodafe/?_rdc=1&_rdr" class="btn-facebook">Facebook
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                       <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="faca-mais-img">
+                <img src="img/img-1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-img" id="space-down">
+                <img src="img/img-2.jpg" alt="">
+            </div>
+            <div class="faca-mais-text">
+                <h3>Todo primeiro domingo do mês</h3>
+                <p>
+                    "Participe da Santa Ceia em nossa igreja, um momento 
+                    sagrado de comunhão e renovação espiritual. Venha, celebre e fortaleça sua fé."
+                </p>
+                <a href="contacto.html" class="btn">Entre em contacto</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <div class="container">
+            <h3>Frases biblicas</h3>
+            <p>O que a biblia diz:</p>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="img/me.JPG" alt="Leandro">
+                    <p class="nome-user">Filipenses 4:13</p>
+                    <p class="depoimento-user">
+                        Tudo posso naquele que me fortalece.
+                    </p>
+                </div>
+                <div class="card-item">
+                    <img src="img/me.JPG" alt="Leandro">
+                    <p class="nome-user">Hebreus 11:1</p>
+                    <p class="depoimento-user">
+                        Orá, a fé é a certeza das coisas que se esperam a 
+                        convicção de factos que não se veem.
+                    </p>
+                </div>
+                <div class="card-item">
+                    <img src="img/me.JPG" alt="Leandro">
+                    <p class="nome-user">Salmos 37:5</p>
+                    <p class="depoimento-user">
+                        Entregue o seu caminho no Senhor; confie nele, e ele agirá.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientes">
+       <div class="container">
+          <h3>Nossas Marcas</h3>
+          <p>Conheça as marcas que nos identifica.
+          </p>
+          <div>
+             <img src="img/EBD.png" alt="">
+             <img src="img/microsoft.png" alt="">
+             <img src="img/slack.png" alt="">
+             <img src="img/google.png" alt="">
+          </div>
+       </div>
+    </section>
+
+    <section class="faca-mais" id="fff">
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Palavra, Louvor e Adoração a Deus!</h3>
+                <p>
+                    Aos domingos temos dois cultos o primeiro das 7h:00 - 8h:00,
+                    e o segundo das 09h:00 - 11h:30.
+                </p>
+                <a href="contacto.html" class="btn">Entre em contacto</a>
+            </div>
+            <div class="faca-mais-img">
+                <img src="img/security.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+
+            </div>
+            <p>Igreja Visão Cristã &copy; Copyright 2023</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

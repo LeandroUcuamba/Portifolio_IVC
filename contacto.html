@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Contacto e Localização</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header style="background-image: url(img/background-home.jpg);">
+        <!-- Container -->
+        <div class="container">
+           <nav>
+              <a href="index.html">
+                <img src="img/logo.png" alt="logotipo">
+              </a>
+              <ul class="ul">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="fotos.html">Fotos</a>
+                <a href="contacto.html" class="btn">Contacto</a>
+                <div class="close-icon" onclick="closeMenu()">
+                    <i class="fa fa-times-circles">
+                        <svg width="64px" height="64px" viewBox="-122.88 -122.88 1269.76 1269.76" xmlns="http://www.w3.org/2000/svg" fill="#b31919" stroke="#b31919" stroke-width="51.2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#165a24" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"></path></g></svg>
+                    </i>
+                </div>
+              </ul>
+              <div class="menu-icon" onclick="openMenu()">
+                 <i class="fa fa-bars" aria-hidden="true">
+                    <svg width="64px" height="64px" viewBox="-2.16 -2.16 22.32 22.32" xmlns="http://www.w3.org/2000/svg" fill="#157024" stroke="#157024" stroke-width="1.2959999999999998"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#1f2e1e" d="M17 5H1a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2zm0 5H1a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2zm0 5H1a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2z"></path> </g></svg>
+                 </i>
+              </div>
+           </nav>
+           <section class="banner">
+                <div class="banner-text">
+                    <h1>Contacte</h1>
+                </div>
+           </section>
+        </div>
+        <!-- End Container -->
+    </header>
+    <!-- End header -->
+
+    <section class="contacto">
+         <div class="container">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.042750887671!2d13.27893027344862!3d-8.87561239098507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f741433f7f9d%3A0x3527f7b91c59db30!2zSWdyZWphIFZpc8OjbyBDcmlzdMOj!5e0!3m2!1spt-PT!2sao!4v1695297403704!5m2!1spt-PT!2sao" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contacto-info">
+                <div class="left-side">
+                    <div>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p>Luanda, Angola</p>
+                     </div>
+                    <div>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p>No Kapolo 2, a poucos metros do Cólegio Arco Iris</p>
+                     </div>
+                     <div>
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>(+244) 930137419</p>
+                     </div>
+                </div>
+                <div class="right-side">
+                     <form action="">
+                        <input type="text" placeholder="Nome" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Assunto" required>
+                        <textarea cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+                        <button class="btn">Enviar Mensagem</button>
+                     </form>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+
+            </div>
+            <p>Igreja Visão Cristã &copy; Copyright 2023</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

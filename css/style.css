@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #f1f6fc31;
+}
+
+section,
+footer{
+    padding: 54px 0;
+}
+
+/* Primeira section */
+h3{
+    font-size: 50px;
+}
+p{
+    color: #0000009c;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+header .container{
+    background-color: #00ff2632;
+}
+
+.btn{
+    background-color: #dd2e2e;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn:hover{
+    background-color: #f4290ed1;
+    border-color: 1px solid black;
+}
+
+.btn-facebook{
+    background-color: #2f8ae6;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn-facebook:hover{
+    background-color: rgba(4, 87, 230, 0.82);
+    border-color: 1px solid black;
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* torna a imagem fixa na tela ao fazer scroll(parallax) */
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block ;
+}
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: #dd2e2e;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+
+/* Menu Mobile */
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+nav .close-icon{
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 60px;
+    color: rgb(236, 46, 46);
+    margin-bottom: 22px;
+}
+
+/* Segunda e terceira section  --   Faça mais */
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+}
+.faca-mais .faca-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+.faca-mais .faca-mais-text h3{
+    font-size: 56px;
+}
+.faca-mais .faca-mais-text p{
+    margin: 5px 0 10px 0;
+}
+.faca-mais .faca-mais-img{
+    width: 50%;
+}
+.faca-mais .faca-mais-img img{
+    width: 100%;
+    border-radius: 30px;
+    width: 350px;
+}
+
+/* Quarta section -- depoimento */
+.depoimentos h3{
+    text-align: center;
+}
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.depoimentos .card-item{
+    background-color: #d3e6fd;
+    margin: 7px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.5s;
+}
+.depoimentos .card-item img{
+    border-radius: 90%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+}
+.depoimentos .card-item .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.depoimentos .card-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+}
+.depoimentos .card-item:hover{
+    background-color: #073d11e0;
+    margin-top: -5px;
+}
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimento-user{
+    color: white;
+}
+
+
+/* Quinta section  -- Nossos clientes */
+.clientes h3,
+.clientes p{
+    text-align: center;
+}
+.clientes .container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* O sexto reutilizei código da segunda section */
+.footer{
+    background-color: #073d11e0;
+    display: flex;
+    align-items: center;
+}
+.footer p{
+    color: white;
+}
+
+
+/* Pagina Sobre */
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: #000000a6;
+}
+
+.sobre .sobre-img{
+    width: 50%;
+}
+
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* End Pagina Sobre */
+
+/* Pagina Serviço */
+.fotos h3{
+    text-align: center;
+}
+
+.fotos .rows-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.fotos .row-card-item {
+    background-color: #f9fafb;
+    width: 400px;
+    height: 440px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 10px;
+}
+
+.row-card-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* End Pagina Serviço */
+
+/* Pagina Contacto */
+.contacto-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contacto-info .left-side{
+   width: 50%;
+   padding: 30px;
+   background-color: #073d11e0;
+   border-radius: 14px;
+   margin-right: 50px;
+   height: fit-content;
+}
+
+.left-side svg{
+    color: rgb(251, 248, 248);
+    margin-right: 20px;
+}
+
+.contacto-info .left-side div{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.contacto-info .left-side div i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+
+.contacto-info .left-side p{
+    font-size: 17px;
+    color: white;
+}
+
+.contacto-info .right-side{
+    width: 50%;
+}
+
+.contacto-info .right-side input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+}
+
+.contacto-info .right-side input:focus,
+.contacto-info .right-side textarea:focus{
+    border-color: #073d11e0;
+}
+
+.contacto-info .right-side textarea{
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    border: 1px solid #073d11e0;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+    background-color: rgba(219, 224, 219, 0.604)
+}
+
+.contacto-info .right-side textarea{
+    border: none;
+}
+
+/* End Pagina Contacto */
+
+@media(max-width: 830px){
+   .ul{
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #073d11e0;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      clip-path: circle(0% at 100% 0);
+      transition: 0.7s;
+   }
+   .ul.open{
+      clip-path: circle(141.4% at 100% 0); /* Efeito de fechar e abrir */
+   }
+   .ul a{
+      margin: 10px 0;
+      font-size: 16px ;
+   }
+   nav .menu-icon{
+      display: block;
+   }
+   nav  .close-icon{
+      display: block;
+      position: absolute;
+      top: 46px;
+      right: 28px;
+   }
+
+    
+   /* Pagina home responsiva */
+   .face-mais .faca-mais-text{
+      margin-top: 10px;
+      padding: 0 20px;
+      order: 1; /* para inverter a ordem */
+   }
+
+   #fff{
+      margin-top: -74px;
+   }
+
+   .faca-mais .container{
+      flex-direction: column;
+   }
+   .faca-mais .faca-mais-text h3{
+      font-size: 30px;
+      width: 100%;
+   }
+   .faca-mais .faca-mais-text,
+   .faca-mais .faca-mais-img{
+      width: 100%;
+   }
+   .faca-mais .faca-mais-img img{
+      width: 100%;
+   }
+
+   .depoimentos .container h3,
+   .clientes .container h3{
+      font-size: 34px;
+   }
+
+   /* Banner responsivo */
+   .banner .banner-text{
+      padding: 0;
+      margin: 58px;
+   }
+   .banner .banner-text h1{
+      font-size: 40px;
+   }
+   .banner .banner-text p{
+       font-size: 15px;
+    }
+    .depoimentos .card-item{
+        width: 100%;
+    }
+
+    .clientes .container div{
+        flex-direction: column;
+    }
+
+    /* Pagina sobre responsiva */
+
+    .faca-mais .container a{
+        margin-bottom: 16px;
+     }
+
+     #space-down{
+        margin-bottom: 40px;
+     }
+    
+    .sobre .container{
+        flex-direction: column-reverse;
+    }
+
+    .sobre .sobre-img,
+    .sobre .sobre-text{
+        width: 100%;
+    }
+
+    .sobre .sobre-text p{
+        margin-top: 40px;
+        font-size: 17px;
+        text-align: justify; 
+    }
+
+    .sobre .sobre-text h3{
+        font-size: 38px;
+        margin-top: 16px;
+    }
+
+   /* Pagina contacto responsiva */
+   .contacto .contacto-info{
+    flex-direction: column-reverse;
+    }
+
+    .contacto-info .right-side,
+    .contacto-info .left-side{
+        width: 100%;
+    }
+
+    .contacto-info .right-side{
+        margin-bottom: 30px;
+    }
+
+    .container .mapa iframe{
+        width: 100%;
+    }
+
+    .footer .container p{
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
